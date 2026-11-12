@@ -108,19 +108,3 @@ the transitions in the table at the top of `pool.py`.
 
 Not yet covered: a live run against a real provider. The presets for Anthropic and Gemini have not been checked against
 their live APIs.
-
-## 5. What I would change next
-
-1. **Run the suite in CI** on several Python versions, and publish the result, so the test claim can be checked.
-2. **Move key health into a store interface** with a Redis implementation, but only once a second process needs it.
-3. **Add a live smoke test** that is skipped unless a real key is set, so the presets are checked against real providers.
-4. **Record the reason for each state change** in the status output, so a person can see why a key is benched.
-
-## 6. Open questions for the author
-
-These are decisions I have written down from the code. Please confirm them or correct them in your own words, because
-the doc should describe your reasoning:
-
-- Why 12 to 24 hours for quota, and not a number taken from a provider's documentation?
-- Why cap `Retry-After` at 1 hour?
-- Is the probe timeout of 120 seconds based on anything you measured?
