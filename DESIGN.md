@@ -1,8 +1,8 @@
 # Design notes: keyswap v2
 
 This file explains why keyswap is built the way it is: the problem, the choices, what they cost, and what I would
-change next. The user-facing guide is the [README](README.md). The list of v1 problems is in
-[docs/v1-to-v2.md](docs/v1-to-v2.md).
+change next. The user-facing guide is the [README](rate_limiter_and_key_swapper_v2/README.md). The list of v1 problems is in
+[docs/v1-to-v2.md](rate_limiter_and_key_swapper_v2/docs/v1-to-v2.md).
 
 ## 1. The problem
 
