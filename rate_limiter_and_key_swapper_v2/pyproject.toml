@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keyswap"
+version = "2.0.0"
+description = "Health-aware API key rotation with separate 429/503 handling and model fallbacks."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["httpx>=0.25"]
+
+[project.optional-dependencies]
+proxy = ["fastapi>=0.110", "uvicorn>=0.27"]
+dev = ["pytest>=7", "fastapi>=0.110", "uvicorn>=0.27"]
+
+[project.scripts]
+keyswap = "keyswap.__main__:main"
+
+[tool.setuptools]
+packages = ["keyswap"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
