@@ -78,10 +78,6 @@ Library usage, configuration, error types, limitations and tests are all in the
 - The Anthropic and Gemini presets have not been checked against the live APIs yet. Reports are welcome.
 - Run a single worker. Key state is held in one process.
 
-## Use keys you own
-
-Spreading traffic over keys that belong to you or your organisation is the intended use. Some providers restrict
-creating several accounts to get around rate limits, so check the provider's terms first.
 
 ## License
 
