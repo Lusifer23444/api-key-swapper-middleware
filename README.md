@@ -45,7 +45,6 @@ v2: request -> pick healthy key (probe a recovering one first)
 | Keys | Read from env at startup | Added or removed while running; loaded from env, `.env` or file |
 | Restarts | Cool-downs lost | Optional health file (ids and times, never secrets) |
 | Use | HTTP proxy only | Python library, with the proxy as an optional extra |
-| Tests | 42 to 46 (v1 suite) | 77, using a fake provider (no network or keys) |
 
 The full list of 12 problems and how each was fixed is in
 [docs/v1-to-v2.md](rate_limiter_and_key_swapper_v2/docs/v1-to-v2.md).
